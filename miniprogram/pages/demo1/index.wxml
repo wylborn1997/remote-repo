@@ -1,0 +1,11 @@
+<!--pages/demo1/index.wxml-->
+<text>pages/demo1/index.wxml</text>
+<button type="primary" bindtap="upData">更新一条记录</button>
+--------
+<input  placeholder="请输入id" bindinput="myIpt"/>
+<!-- 注意bindinput和bindtap不一样，前者可以记录输入内容 -->
+<button type="primary" bindtap="delData">删除一条记录</button>
+--------
+<button type="primary" bindtap="btnNum">查询记录的个数</button>
+
+<view wx:for="{{dataArr}}" wx:key="index">{{index+1}}.{{item.title}}</view>

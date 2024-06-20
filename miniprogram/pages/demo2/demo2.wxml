@@ -1,0 +1,4 @@
+<!--pages/demo2/demo2.wxml-->
+<text>pages/demo2/demo2.wxml</text>
+ <button type="primary" bind:tap="getData">条件查询</button>
+ <button type="primary" bind:tap="getData2">获取数据</button>

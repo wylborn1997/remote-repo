@@ -1,0 +1,177 @@
+<!--pages/message/message.wxml-->
+<view class="container3">
+      <text class="item1" style="font-weight:bold;">{{"发球"}}</text>
+  </view>
+  <view class="container5"> 
+      <text class="item">{{yifade || 0}}{{"%"}}</text>
+      <text class="item" >{{"一发得分率"}}</text>
+      <text class="item">{{yifade1 || 0}}{{"%"}}</text>
+  </view>
+<view class="container3">
+  <view class="pro1">
+    <van-progress pivot-text=" " color = "{{proAColor1}}" percentage= "{{yifade}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor1}}" percentage= "{{yifade1}}" stroke-width="8"/>
+  </view>
+</view>
+<view class="container5">
+      <text class="item">{{erfade || 0}}{{"%"}}</text>
+      <text class="item">{{"二发得分率"}}</text>
+      <text class="item">{{erfade1 || 0}}{{"%"}}</text>
+  </view>
+<view class="container3">
+  <view class="pro1">
+  <van-progress pivot-text=" " color = "{{proAColor2}}" percentage= "{{erfade}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor2}}" percentage= "{{erfade1}}" stroke-width="8"/>
+  </view>
+</view>
+<view class="container5">
+      <text class="item">{{yifacheng || 0}}{{"%"}}</text>
+      <text class="item">{{"一发成功率"}}</text>
+      <text class="item">{{yifacheng1 || 0}}{{"%"}}</text>
+  </view>
+<view class="container3">
+  <view class="pro1">
+  <van-progress pivot-text=" " color = "{{proAColor3}}" percentage= "{{yifacheng}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor3}}" percentage= "{{yifacheng1}}" stroke-width="8"/>
+  </view>
+</view>
+<view class="container5">
+      <text class="item">{{erfacheng || 0}}{{"%"}}</text>
+      <text class="item">{{"二发成功率"}}</text>
+      <text class="item">{{erfacheng1 || 0}}{{"%"}}</text>
+  </view>
+<view class="container3">
+  <view class="pro1">
+  <van-progress pivot-text=" " color = "{{proAColor4}}" percentage= "{{erfacheng}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor4}}" percentage= "{{erfacheng1}}" stroke-width="8"/>
+  </view>
+</view>
+
+<view class="container3">
+      <text class="item1" style="font-weight:bold;">{{"得分"}}</text>
+</view>
+
+<view class="container5"> 
+    <text class="item">{{Zcount || 0}}</text>
+    <text class="item">{{"总得分"}}</text>
+    <text class="item">{{Zcount1 || 0}}</text>
+</view>
+<view class="container3">
+  <view class="pro1">
+    <van-progress pivot-text=" " color = "{{proAColor5}}" percentage= "{{(Zcount)*100/(Zcount+Zcount1)}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor5}}" percentage= "{{(Zcount1)*100/(Zcount+Zcount1)}}" stroke-width="8"/>
+  </view>
+</view>
+
+<view class="container5"> 
+      <text class="item">{{faqiu || 0}}</text>
+      <text class="item">{{"发球得分"}}</text>
+      <text class="item">{{faqiu1 || 0}}</text>
+  </view>
+<view class="container3">
+  <view class="pro1">
+    <van-progress pivot-text=" " color = "{{proAColor6}}" percentage= "{{(faqiu)*100/(faqiu+faqiu1)}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor6}}" percentage= "{{(faqiu1)*100/(faqiu+faqiu1)}}" stroke-width="8"/>
+  </view>
+</view>
+
+<view class="container5"> 
+      <text class="item">{{Zcount-faqiu}}</text>
+      <text class="item">{{"接发球得分"}}</text>
+      <text class="item">{{Zcount1-faqiu1}}</text>
+  </view>
+<view class="container3">
+  <view class="pro1">
+    <van-progress pivot-text=" " color = "{{proAColor7}}" 
+    percentage= "{{(Zcount-faqiu)*100/(Zcount-faqiu+Zcount1-faqiu1)}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor7}}" 
+    percentage= "{{(Zcount1-faqiu1)*100/(Zcount-faqiu+Zcount1-faqiu1)}}" stroke-width="8"/>
+  </view>
+</view>
+
+<view class="container3">
+      <text class="item">{{ace || 0}}</text>
+      <text class="item">{{"Ace球"}}</text>
+      <text class="item">{{ace1 || 0}}</text>
+</view>
+<view class="container5">
+  <view class="pro1">
+  <van-progress pivot-text=" " color = "{{proAColor7}}" percentage= "{{ace*30/(ace+ace1)}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor7}}" percentage= "{{ace1*30/(ace+ace1)}}" stroke-width="8"/>  
+  </view>
+</view> 
+
+<view class="container3">
+      <text class="item">{{shuangwu || 0}}</text>
+      <text class="item">{{"双误"}}</text>
+      <text class="item">{{shuangwu1 || 0}}</text>
+</view>
+<view class="container5">
+  <view class="pro1">
+  <van-progress pivot-text=" " color = "{{proAColor}}" percentage= "{{shuangwu*30/(shuangwu+shuangwu1)}}" stroke-width="8"/>
+  </view>
+  <view class="pro">
+    <van-progress pivot-text=" " color = "{{proBColor}}" percentage= "{{shuangwu1*30/(shuangwu+shuangwu1)}}" stroke-width="8"/>  
+  </view>
+</view> 
+
+<view class="container">
+    <view class="container1">
+      <button class="button1" bindtap="huanfaColor" style="background-color:{{qiuyuanColor1}}">{{nameList[0]}}{{Astatus}}</button>
+      <button class="button1" bindtap="huanfaColor" style="background-color:{{qiuyuanColor2}}">{{nameList[1]}}{{Bstatus}}</button>
+    </view>
+    <view class="container2">
+    <button bindtap="increaseCount1" class="button"  
+    style="color: {{buttonAColor}}; background-color:{{backAColor}};font-weight:bold;" >
+      <text class="count">{{jufen}}</text>
+    </button>
+    <button bindtap="AClick" class="button" id="buttonA" 
+    style="color: {{buttonAColor}}; background-color:{{backAColor}};font-weight:bold;" >
+      <text class="count">{{xiaofen}}</text>
+    </button>
+    <button bindtap="increaseCount1" class="button" 
+    style="color: {{buttonBColor}}; background-color:{{backBColor}};font-weight:bold;">
+      <text class="count">{{jufen1}}</text>
+    </button>
+    <button bindtap="BClick" class="button" id="buttonB" 
+    style="color: {{buttonBColor}}; background-color:{{backBColor}};font-weight:bold;">
+      <text class="count">{{xiaofen1}}</text>
+    </button>
+    </view>
+    <view class="container1">
+        <button bindtap="ace" class="button2">{{"ACE"}}</button>
+        <button bindtap="yifa" style="background-color:{{yifaColor}}" class="button2">{{status}}</button>
+        <button bindtap="shuangwu" class="button2">{{"双误"}}</button>
+    </view>
+  </view>
+  
+  <button bindtap="undo">撤销（第一次双击）</button>
+  <button bindtap="bindtap">点击跳转</button>
+
+<view>
+  <input type="text" placeholder="请在完成比赛后输入站号" bindinput="inputzhanhao"/>
+  <button bindtap="localsave">存储到本地</button>
+</view>
+
+  <view class="input-area">
+    <input class="input" placeholder="请输入球员姓名" bindinput="onInput" value="{{inputValue}}"></input>
+    <button class="btn" bindtap="onSave">保存</button>
+  </view> 
+
+  <button bindtap="clearData">清零数据</button>

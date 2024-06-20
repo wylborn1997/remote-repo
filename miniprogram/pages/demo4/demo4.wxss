@@ -1,0 +1,33 @@
+/* pages/demo4/demo4.wxss */
+.tableTou {
+  border: 1rpx solid #ddd;
+  width: 25%;
+  display: flex;
+  background-color: #1ca8fd;
+  height: 60rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+}
+
+.tableTou1 {
+  border: 1rpx solid #ddd;
+  width: 100%;
+  display: flex;
+  background-color: #1ca8fd;
+  height: 60rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+}
+
+.tableTR {
+  border: 1rpx solid #ddd;
+  width: 100rpx;
+  display: flex;
+  background-color: #f3f3f3;
+  height: 60rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+}

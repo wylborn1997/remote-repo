@@ -1,0 +1,85 @@
+/* pages/message/message.wxss */
+.container{
+  display: inline;
+  background-color: #EAEAEA;
+  height: 600rpx;
+  }
+.container1{
+  display: flex;
+  justify-content: space-between;
+  height: 110rpx;
+  background-color: #EAEAEA;
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 210rpx;
+  background-color: #EAEAEA;
+}
+
+.button {
+  width: 170rpx;
+  height: 190rpx;
+  background-color: #60AD2A;
+  color: white;
+  font-size: 80rpx;
+  margin:10rpx
+}
+
+.button1 {
+  flex: 1;
+  width: 300rpx;
+  height: 90rpx;
+  background-color: #ABD6D7;
+  color: white;
+  font-size: 40rpx;
+  margin:10rpx
+}
+
+.button2 {
+  flex: 1;
+  width: 300rpx;
+  height: 90rpx;
+  background-color: skyblue;
+  color: white;
+  font-size: 32rpx;
+  margin:10rpx
+}
+
+.count {
+  font-size: 80rpx;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+}
+.pro{
+  display: table;
+  width: 375rpx;
+
+}
+
+/* 反向进度条样式 */
+.pro1{
+  display: table;
+  transform: scaleX(-1);
+  width: 375rpx;
+}
+
+.container5 {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  flex: 1;
+  text-align: center;
+}
+.item1 {
+  flex: 1;
+  text-align: center;
+  font-size: 32rpx;
+}

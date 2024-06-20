@@ -1,0 +1,72 @@
+   <!-- 绘制表格 -->
+
+   <wxs module="filters">
+  var filters = {
+    toFix: function (value) {
+      return parseFloat(value)
+    }
+  }
+  module.exports = {
+    toFix: filters.toFix
+  }
+</wxs>
+
+   <view style="margin-top: 25rpx;">
+    <view style="display: flex;flex-direction: row;justify-content: space-around;">
+ </view>
+ <view style="display: flex;flex-direction: row;justify-content: space-around;">
+  <view class="tableTou" >
+     排名
+   </view>
+   <view class="tableTou" >
+     姓名
+   </view>
+   <view class="tableTou">
+     胜率
+   </view>
+   <view class="tableTou">
+     总场数
+   </view>
+   <view class="tableTou">
+     冠军数
+   </view>
+   <view class="tableTou">
+     总积分
+   </view>
+   <view class="tableTou">
+     积分变化
+   </view>
+   <view class="tableTou">
+     排名变化
+   </view>
+ </view>
+ <view wx:for="{{dataList}}" wx:key="index" bindtap="lookCompany" >
+   <view style="display: flex;flex-direction: row;justify-content: space-around;">
+     <view id="1" class="tableTR">
+       {{index+1}}
+     </view>
+     <view class="tableTR" id="1" data-hi="{{index}}" bindtap="tapName">
+      {{item.name}}
+     </view>
+     <view class="tableTR">
+      {{(item.shengChang* 100/item.zongChang)|filters.toFix}}{{"%"}}
+     </view>
+     <view class="tableTR">
+      {{item.zongChang}}
+     </view>
+     <view class="tableTR">
+       {{item.goat}}
+     </view>
+     <view class="tableTR">
+      {{item.paiMing}}
+     </view>
+     <view class="tableTR">
+      {{item.w25}}
+     </view>
+     <view class="tableTR">
+      {{item.change}}
+     </view>
+   </view>
+ </view>
+</view>
+<button type="primary" bindtap="Order">排序</button>

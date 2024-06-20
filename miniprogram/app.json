@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/h2h/h2h",
+    "pages/socreboard/scoreboard",
+    "pages/lufen/demo8",
+    "pages/demo7/demo7",
+    "pages/demo6/demo6",
+    "pages/demo5/demo5",
+    "pages/demo4/demo4",
+    "pages/demo3/demo3",
+    "pages/demo2/demo2",
+    "pages/index/index",
+    "pages/demo1/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "新蓉汇网球",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/lufen/demo8",
+        "text": "录分",
+        "iconPath": "/images/tabs/home.png",
+        "selectedIconPath": "/images/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/socreboard/scoreboard",
+        "text": "计分板",
+        "iconPath": "/images/tabs/message.png",
+        "selectedIconPath": "/images/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/demo4/demo4",
+        "text": "排名",
+        "iconPath": "/images/tabs/goods.png",
+        "selectedIconPath": "/images/tabs/goods-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-button":"@vant/weapp/button/index",
+    "van-progress": "@vant/weapp/progress/index"
+  }
+}

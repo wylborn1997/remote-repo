@@ -1,0 +1,12 @@
+/* pages/demo/demo.wxss */
+.my-chart{
+  width: 710rpx;
+  height: 500rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+ec-canvas{
+  width: 100%;
+  height: 100%;
+}

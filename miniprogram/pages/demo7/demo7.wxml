@@ -1,0 +1,6 @@
+<!--pages/demo/demo.wxml-->
+<view class="my-chart">
+     <ec-canvas id="mychart-dom" canvas-id="mychart" ec="{{ec1}}"></ec-canvas>
+     <ec-canvas id="mychart-dom" canvas-id="mychart" ec="{{ec3}}"></ec-canvas>
+     <ec-canvas id="mychart-dom" canvas-id="mychart" ec="{{ec2}}"></ec-canvas>
+</view>

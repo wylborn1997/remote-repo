@@ -1,0 +1,30 @@
+<!--pages/demo8/demo8.wxml-->
+<text>pages/demo8/demo8.wxml</text>
+<view class="container">
+  <view class="input-wrapper">
+    <text>姓名：</text>
+    <input bindinput="onNameInput" />
+  </view>
+  <view class="input-wrapper">
+    <text>积分：</text>
+    <input type="number" bindinput="onScoreInput" />
+  </view>
+  <view class="input-wrapper">
+    <text>名次：</text>
+    <input type="number" bindinput="onRankInput" />
+  </view>
+  <view class="input-wrapper">
+    <text>胜场数：</text>
+    <input type="number" bindinput="onShengInput" />
+  </view>
+  <view class="input-wrapper">
+    <text>总场数：</text>
+    <input type="number" bindinput="onZongInput" />
+  </view>
+  <view class="input-wrapper">
+    <text>日期：</text>
+    <input type="date" bindinput="onDateInput" />
+  </view>
+  <button type="primary" bindtap="onSubmit">提交</button>
+</view>
+<view wx:for="{{dataArr}}" wx:key="index">{{index+1}}.{{item.name}}</view>

@@ -1,0 +1,100 @@
+{
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/h2h/h2h",
+          "pathName": "pages/h2h/h2h",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/demo8/demo8",
+          "pathName": "pages/demo8/demo8",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/demo4/demo4",
+          "pathName": "pages/demo4/demo4",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/demo7/demo7",
+          "pathName": "pages/demo7/demo7",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/demo6/demo6",
+          "pathName": "pages/demo6/demo6",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/demo5/demo5",
+          "pathName": "pages/demo5/demo5",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/demo3/demo3",
+          "pathName": "pages/demo3/demo3",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/demo2/demo2",
+          "pathName": "pages/demo2/demo2",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/demo1/index",
+          "pathName": "pages/demo1/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "首页-快速开始",
+          "pathName": "pages/index/index",
+          "query": ""
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goods-list/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "云开发示例",
+          "pathName": "pages/examples/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/user-center/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E4%BA%91%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80"
+}
