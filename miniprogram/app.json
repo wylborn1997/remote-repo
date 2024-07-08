@@ -10,7 +10,8 @@
     "pages/demo3/demo3",
     "pages/demo2/demo2",
     "pages/index/index",
-    "pages/demo1/index"
+    "pages/demo1/index",
+    "pages/concat2/concat2"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -44,7 +45,7 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "usingComponents": {
-    "van-button":"@vant/weapp/button/index",
+    "van-button": "@vant/weapp/button/index",
     "van-progress": "@vant/weapp/progress/index"
   }
 }
